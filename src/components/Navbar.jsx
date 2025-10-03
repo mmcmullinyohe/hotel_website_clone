@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {assets} from "../assets/assets"
-import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
 
 const Navbar = () => {
     const navLinks = [
@@ -14,9 +13,7 @@ const Navbar = () => {
 
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-    const {openSignIn} = useClerk();
-    const {user} = useUser();
+;
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -53,7 +50,7 @@ const Navbar = () => {
                 {/* Desktop Right */}
                 <div className="hidden md:flex items-center gap-4">
                   <img src={assets.searchIcon} alt="search" classname= {`${isScrolled && 'invert'} h-7 transition-all duration-500`} />
-                    <button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
+                    <button className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
                         Login
                     </button>
                 </div>
@@ -79,7 +76,7 @@ const Navbar = () => {
                         Dashboard
                     </button>
 
-                    <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
+                    <button className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
                         Login
                     </button>
                 </div>
