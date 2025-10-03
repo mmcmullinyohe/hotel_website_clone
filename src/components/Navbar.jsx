@@ -16,7 +16,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const {openSignIn} = useClerk();
-    const {user} = useUser;
+    const {user} = useUser();
 
     React.useEffect(() => {
         const handleScroll = () => {
