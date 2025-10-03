@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { assets } from '../assets/assets'
 
 const HotelCard = ({room, index}) => {
   return (
@@ -9,7 +8,7 @@ const HotelCard = ({room, index}) => {
         <p>Best Seller</p>
         <div>
             <div>
-                <p>{room.hotel.name}</p>
+                <p className='font-playfair text-xl font-medium text-gray-800'>{room.hotel.name}</p>
                 <div className='flex items-center gap-1'>
                     <img src={assets.starIconFilled} alt="star-icon" /> 4.5
                 </div>
