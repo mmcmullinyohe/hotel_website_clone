@@ -12,3 +12,4 @@ const StarRating = ({rating = 4}) => {
 }
 
 export default StarRating
+
