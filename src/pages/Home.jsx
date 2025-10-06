@@ -4,6 +4,7 @@ import FeaturedDestination from '../components/FeaturedDestination'
 import HotelCard from '../components/HotelCard'
 import ExclusiveOffers from '../components/ExclusiveOffers'
 import Testimonial from '../components/Testimonial'
+import NewsLetter from '../components/NewsLetter'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <FeaturedDestination />
       <ExclusiveOffers />
       <Testimonial />
+      <NewsLetter />
     </>
   )
 }
