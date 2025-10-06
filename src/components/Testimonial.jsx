@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
 import { testimonials } from '../assets/assets';
-
+import StarRating from './StarRating';
 
 const Testimonial = () => {
   return (
@@ -18,7 +18,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 mt-4">
-                          
+                            <StarRating />
                         </div>
                         <p className="text-gray-500 max-w-90 mt-4">"{testimonial.review}"</p>
                     </div>
